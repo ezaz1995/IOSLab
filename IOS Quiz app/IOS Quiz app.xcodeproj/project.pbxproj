@@ -20,6 +20,7 @@
 		3E36425625616E4800C7A2B4 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36425525616E4800C7A2B4 /* ResultView.swift */; };
 		3E36425B2561817400C7A2B4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36425A2561817400C7A2B4 /* Question.swift */; };
 		3E364260256185FC00C7A2B4 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36425F256185FC00C7A2B4 /* StartViewController.swift */; };
+		3EBE7DB92561B314006A5C65 /* QuestionsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE7DB82561B314006A5C65 /* QuestionsResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3E36425525616E4800C7A2B4 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		3E36425A2561817400C7A2B4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3E36425F256185FC00C7A2B4 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		3EBE7DB82561B314006A5C65 /* QuestionsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				3E36425525616E4800C7A2B4 /* ResultView.swift */,
 				3E36425A2561817400C7A2B4 /* Question.swift */,
 				3E36425F256185FC00C7A2B4 /* StartViewController.swift */,
+				3EBE7DB82561B314006A5C65 /* QuestionsResult.swift */,
 			);
 			path = "IOS Quiz app";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				3E36421A25614ED500C7A2B4 /* IOS_Quiz_app.xcdatamodeld in Sources */,
 				3E36421025614ED500C7A2B4 /* AppDelegate.swift in Sources */,
 				3E36421225614ED500C7A2B4 /* SceneDelegate.swift in Sources */,
+				3EBE7DB92561B314006A5C65 /* QuestionsResult.swift in Sources */,
 				3E36425B2561817400C7A2B4 /* Question.swift in Sources */,
 				3E36425625616E4800C7A2B4 /* ResultView.swift in Sources */,
 			);

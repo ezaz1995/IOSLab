@@ -10,7 +10,6 @@
         <!--Navigation Controller-->
         <scene sceneID="qXa-11-3vF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ugu-Xh-GK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Fyy-Hl-ogl" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vQt-b2-9bo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -20,13 +19,13 @@
                         <segue destination="UOF-6M-5Qf" kind="relationship" relationship="rootViewController" id="9Qq-Ab-E0i"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugu-Xh-GK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-562" y="24"/>
         </scene>
-        <!--Harry Potter Quiz-->
+        <!--Start Manu-->
         <scene sceneID="l1i-of-dCr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YTW-VT-1bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="UOF-6M-5Qf" customClass="StartViewController" customModule="IOS_Quiz_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qmz-Xc-y2c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -67,8 +66,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="OSg-Gk-3WV" secondAttribute="trailing" id="zft-oN-hgs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Harry Potter Quiz" id="krQ-Lf-Fwc"/>
+                    <navigationItem key="navigationItem" title="Start Manu" id="krQ-Lf-Fwc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTW-VT-1bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="302.89855072463769" y="22.767857142857142"/>
         </scene>
