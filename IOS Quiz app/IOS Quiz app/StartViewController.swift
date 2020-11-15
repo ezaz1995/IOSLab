@@ -29,12 +29,12 @@ class StartViewController: UIViewController {
                 return
             }
             
-//            print(String(data: data, encoding: .utf8))
+            print(String(data: data, encoding: .utf8))
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let questionsResult = try? decoder.decode(QuestionsResult.self, from: data)
             self.questions = questionsResult?.results ?? []
-            
+            print(self.questions)
         }
         task.resume()
     }

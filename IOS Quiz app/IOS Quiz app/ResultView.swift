@@ -49,7 +49,6 @@ class ResultView: UIView {
         
         //Showing Logo
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Logo"))
-        
         addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
