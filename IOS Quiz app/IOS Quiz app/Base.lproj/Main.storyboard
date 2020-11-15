@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fyy-Hl-ogl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qXa-11-3vF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugu-Xh-GK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="Fyy-Hl-ogl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vQt-b2-9bo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UOF-6M-5Qf" kind="relationship" relationship="rootViewController" id="9Qq-Ab-E0i"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-562" y="24"/>
+        </scene>
+        <!--Harry Potter Quiz-->
+        <scene sceneID="l1i-of-dCr">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTW-VT-1bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="UOF-6M-5Qf" customClass="StartViewController" customModule="IOS_Quiz_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmz-Xc-y2c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="harry-potter-hogwarts-boats-i74249" translatesAutoresizingMaskIntoConstraints="NO" id="OSg-Gk-3WV">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-HM-zDu">
+                                <rect key="frame" x="132" y="410.5" width="150" height="75"/>
+                                <color key="backgroundColor" red="0.59949805699481873" green="0.59949805699481873" blue="0.59949805699481873" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8Op-Up-MSv"/>
+                                    <constraint firstAttribute="height" constant="75" id="bNK-iC-OOS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jdL-9i-GAU" kind="show" id="VfW-fM-fU7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hmy-9I-GGe"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2FQ-HM-zDu" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="05y-X1-hrW"/>
+                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="top" secondItem="Qmz-Xc-y2c" secondAttribute="topMargin" id="2nq-5I-mhK"/>
+                            <constraint firstItem="2FQ-HM-zDu" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="Hct-9K-Es2"/>
+                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="LEd-fT-qV5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OSg-Gk-3WV" secondAttribute="bottom" id="eu2-SK-O17"/>
+                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="hkl-8H-FVv"/>
+                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="leading" secondItem="Qmz-Xc-y2c" secondAttribute="leadingMargin" id="yHx-Ia-47k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OSg-Gk-3WV" secondAttribute="trailing" id="zft-oN-hgs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Harry Potter Quiz" id="krQ-Lf-Fwc"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="302.89855072463769" y="22.767857142857142"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="pIm-FF-Vrc">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="jdL-9i-GAU" customClass="GameViewController" customModule="IOS_Quiz_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXr-gt-5Jo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-H0-08n">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Harrys last name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-OS-dhT">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="357"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23156910211267606" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-RC-vhs">
+                                        <rect key="frame" x="0.0" y="377" width="374" height="357"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mRm-uw-CSR">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="168.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDN-Wq-1aO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="168.5"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Malfoy">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonAnswerAHandler:" destination="jdL-9i-GAU" eventType="touchUpInside" id="aO9-qD-LbC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-UB-l0h">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="168.5"/>
+                                                        <color key="backgroundColor" red="0.59763601036269431" green="0.59763601036269431" blue="0.59763601036269431" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Riddle">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonAnswerBHandler:" destination="jdL-9i-GAU" eventType="touchUpInside" id="YUg-5s-W8g"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KNa-dL-qOD">
+                                                <rect key="frame" x="0.0" y="188.5" width="374" height="168.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikS-Dn-yVV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="168.5"/>
+                                                        <color key="backgroundColor" red="0.59763601036269431" green="0.59763601036269431" blue="0.59763601036269431" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Granger">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonAnswerCHandler:" destination="jdL-9i-GAU" eventType="touchUpInside" id="Uku-Ka-OT8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKC-tq-A1K">
+                                                        <rect key="frame" x="197" y="0.0" width="177" height="168.5"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Potter">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonAnswerDHandler:" destination="jdL-9i-GAU" eventType="touchUpInside" id="TPb-1E-PgW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KDg-Gh-8km"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wMk-H0-08n" firstAttribute="leading" secondItem="KDg-Gh-8km" secondAttribute="leading" constant="20" id="EfM-Tm-CFc"/>
+                            <constraint firstItem="wMk-H0-08n" firstAttribute="trailing" secondItem="KDg-Gh-8km" secondAttribute="trailing" constant="-20" id="QcU-sQ-HNx"/>
+                            <constraint firstItem="wMk-H0-08n" firstAttribute="bottom" secondItem="KDg-Gh-8km" secondAttribute="bottom" constant="-20" id="clq-LB-Myq"/>
+                            <constraint firstItem="wMk-H0-08n" firstAttribute="top" secondItem="KDg-Gh-8km" secondAttribute="top" constant="20" id="o5P-P1-LfN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0VJ-uk-0pB"/>
+                    <connections>
+                        <outlet property="buttonAnswerA" destination="oDN-Wq-1aO" id="OGI-J7-AOJ"/>
+                        <outlet property="buttonAnswerB" destination="NlD-UB-l0h" id="2UH-7P-byc"/>
+                        <outlet property="buttonAnswerC" destination="ikS-Dn-yVV" id="nWq-oc-DkO"/>
+                        <outlet property="buttonAnswerD" destination="iKC-tq-A1K" id="2DT-eI-q81"/>
+                        <outlet property="questionLabel" destination="BsT-OS-dhT" id="xWr-pG-uGE"/>
+                        <segue destination="ltQ-Kh-GSK" kind="show" identifier="ResultView" id="ubv-xb-m5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57D-f4-KrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="23"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="xK7-zU-sNS">
+            <objects>
+                <viewController id="ltQ-Kh-GSK" customClass="ResultViewController" customModule="IOS_Quiz_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N1u-k8-wvL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vjd-ld-K77"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mhh-qs-ok4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGR-Oa-0kT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="harry-potter-hogwarts-boats-i74249" width="235" height="354.5"/>
+    </resources>
+</document>
