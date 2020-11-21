@@ -9,11 +9,13 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
     var questions: [Question] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startButton.isEnabled = false
         downloadQuestions(amount: 5)
 
     }
@@ -23,7 +25,7 @@ class StartViewController: UIViewController {
         guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple") else {
             return
         }
-        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, error) in
             guard let data = data else{
                 print(error)
                 return
@@ -33,8 +35,12 @@ class StartViewController: UIViewController {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let questionsResult = try? decoder.decode(QuestionsResult.self, from: data)
-            self.questions = questionsResult?.results ?? []
-            print(self.questions)
+            self?.questions = questionsResult?.results ?? []
+            
+            DispatchQueue.main.async {
+                self?.startButton.isEnabled = true
+            }
+            
         }
         task.resume()
     }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fyy-Hl-ogl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fyy-Hl-ogl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,42 +32,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="harry-potter-hogwarts-boats-i74249" translatesAutoresizingMaskIntoConstraints="NO" id="OSg-Gk-3WV">
-                                <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="014d18b8e57fc3dc6313f2028ecbaf2b" translatesAutoresizingMaskIntoConstraints="NO" id="ee0-c5-pDe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-HM-zDu">
-                                <rect key="frame" x="132" y="410.5" width="150" height="75"/>
-                                <color key="backgroundColor" red="0.59949805699481873" green="0.59949805699481873" blue="0.59949805699481873" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXH-1a-tYY">
+                                <rect key="frame" x="147" y="408" width="120" height="80"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="8Op-Up-MSv"/>
-                                    <constraint firstAttribute="height" constant="75" id="bNK-iC-OOS"/>
+                                    <constraint firstAttribute="height" constant="80" id="3dh-FP-oS8"/>
+                                    <constraint firstAttribute="width" constant="120" id="rvB-gn-ZBF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="jdL-9i-GAU" kind="show" id="VfW-fM-fU7"/>
+                                    <segue destination="jdL-9i-GAU" kind="show" id="G8W-II-uKm"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnN-oi-cxK">
+                                <rect key="frame" x="171" y="527" width="72" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Easy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-xE-z0E">
+                                <rect key="frame" x="171" y="604" width="72" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Medium"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJP-G1-ogC">
+                                <rect key="frame" x="171" y="678" width="72" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Hard"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hmy-9I-GGe"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2FQ-HM-zDu" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="05y-X1-hrW"/>
-                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="top" secondItem="Qmz-Xc-y2c" secondAttribute="topMargin" id="2nq-5I-mhK"/>
-                            <constraint firstItem="2FQ-HM-zDu" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="Hct-9K-Es2"/>
-                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="LEd-fT-qV5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="OSg-Gk-3WV" secondAttribute="bottom" id="eu2-SK-O17"/>
-                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="hkl-8H-FVv"/>
-                            <constraint firstItem="OSg-Gk-3WV" firstAttribute="leading" secondItem="Qmz-Xc-y2c" secondAttribute="leadingMargin" id="yHx-Ia-47k"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OSg-Gk-3WV" secondAttribute="trailing" id="zft-oN-hgs"/>
+                            <constraint firstItem="ee0-c5-pDe" firstAttribute="bottom" secondItem="hmy-9I-GGe" secondAttribute="bottom" id="2nZ-Gj-LOM"/>
+                            <constraint firstItem="ee0-c5-pDe" firstAttribute="top" secondItem="hmy-9I-GGe" secondAttribute="top" id="TNK-vK-xxZ"/>
+                            <constraint firstItem="ee0-c5-pDe" firstAttribute="leading" secondItem="hmy-9I-GGe" secondAttribute="leading" id="X9N-uF-pxn"/>
+                            <constraint firstItem="ee0-c5-pDe" firstAttribute="trailing" secondItem="hmy-9I-GGe" secondAttribute="trailing" id="fJR-uU-Cbc"/>
+                            <constraint firstItem="VXH-1a-tYY" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="gzA-9u-aZ5"/>
+                            <constraint firstItem="VXH-1a-tYY" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="sun-0h-Q3c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Start Manu" id="krQ-Lf-Fwc"/>
+                    <connections>
+                        <outlet property="startButton" destination="VXH-1a-tYY" id="bDL-XD-qz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTW-VT-1bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +99,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-H0-08n">
                                 <rect key="frame" x="20" y="108" width="374" height="734"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Harrys last name?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-OS-dhT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Harrys last name?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-OS-dhT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="357"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23156910211267606" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -100,7 +116,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oDN-Wq-1aO">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="168.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Malfoy">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,7 +129,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-UB-l0h">
                                                         <rect key="frame" x="197" y="0.0" width="177" height="168.5"/>
                                                         <color key="backgroundColor" red="0.59763601036269431" green="0.59763601036269431" blue="0.59763601036269431" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Riddle">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,7 +147,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ikS-Dn-yVV">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="168.5"/>
                                                         <color key="backgroundColor" red="0.59763601036269431" green="0.59763601036269431" blue="0.59763601036269431" alpha="0.24845950704225353" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Granger">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,7 +160,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iKC-tq-A1K">
                                                         <rect key="frame" x="197" y="0.0" width="177" height="168.5"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Potter">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,6 +221,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="harry-potter-hogwarts-boats-i74249" width="235" height="354.5"/>
+        <image name="014d18b8e57fc3dc6313f2028ecbaf2b" width="118" height="220"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

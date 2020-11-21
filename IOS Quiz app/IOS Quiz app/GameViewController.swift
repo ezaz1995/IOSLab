@@ -44,7 +44,7 @@ class GameViewController: UIViewController {
         let correctButton = buttons.removeFirst()
         correctButton?.setTitle(question?.correctAnswer, for: .normal)
         
-        question?.incorrectAnswer.forEach({ (answer) in
+        question?.incorrectAnswers.forEach({ (answer) in
             let button = buttons.removeFirst()
             button?.setTitle(answer, for: .normal)
         })

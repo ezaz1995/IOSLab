@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Question: Decodable {
+    
     enum QuestionType: String, Decodable {
         case multiple
     }
@@ -22,6 +23,6 @@ struct Question: Decodable {
     let difficulty: Difficulty
     let question: String
     let correctAnswer: String
-    let incorrectAnswer: [String]
+    let incorrectAnswers: [String]
     
 }
