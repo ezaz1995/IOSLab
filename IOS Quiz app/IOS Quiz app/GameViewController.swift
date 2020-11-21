@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class GameViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
@@ -108,6 +109,7 @@ class GameViewController: UIViewController {
     private func goToNextScreen() {
         guard questions.isEmpty == false,
             let questionViewController = storyboard?.instantiateViewController(withIdentifier: "GameViewController") as? GameViewController else {
+            saveGameResult()
             performSegue(withIdentifier: "ResultView", sender: nil)
             return
         }
@@ -117,6 +119,21 @@ class GameViewController: UIViewController {
         questionViewController.questions = questions
         navigationController?.pushViewController(questionViewController, animated: true)
     }
+    
+    
+    private func saveGameResult(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        if let gameResult =
+            NSEntityDescription.insertNewObject(forEntityName: "GameResult", into: managedObjectContext) as? GameResult {
+            gameResult.numberOfQuestions = Int32(numberOfQuestions)
+            gameResult.rightAnswers = Int32(rightAnswers)
+            gameResult.date = Date()
+            appDelegate.saveContext()
+        }
+    }
+    
     
     // MARK: - Navigation
     

@@ -20,6 +20,11 @@ class StartViewController: UIViewController {
 
     }
     
+    @IBAction func highscoreButtonHandler(_ sender: Any) {
+        let highscoreTableViewController = HighscoreTableViewController()
+        navigationController?.pushViewController(highscoreTableViewController, animated: true)
+    }
+    
     
     private func downloadQuestions(amount: Int){
         guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple") else {
