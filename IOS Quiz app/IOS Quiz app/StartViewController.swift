@@ -16,7 +16,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         
         startButton.isEnabled = false
-        downloadQuestions(amount: 5)
+        downloadQuestions(amount: 5, difficalty: "easy")
 
     }
     
@@ -25,9 +25,22 @@ class StartViewController: UIViewController {
         navigationController?.pushViewController(highscoreTableViewController, animated: true)
     }
     
+    @IBAction func easyButton(_ sender: Any) {
+        
+    }
     
-    private func downloadQuestions(amount: Int){
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&type=multiple") else {
+    @IBAction func mediumButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func hardButton(_ sender: Any) {
+        
+    }
+    
+    
+    
+    private func downloadQuestions(amount: Int, difficalty: String){
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&difficulty=\(difficalty)&type=multiple") else {
             return
         }
         let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, error) in

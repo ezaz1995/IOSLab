@@ -48,7 +48,7 @@ class ResultView: UIView {
         resultLabel.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
         
         //Showing Logo
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "Logo"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "1024px-Star_Wars_Logo.svg"))
         addSubview(imageView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false

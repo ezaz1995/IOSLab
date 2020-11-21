@@ -53,16 +53,25 @@
                                 <rect key="frame" x="190.5" y="433" width="33" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="easyButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="tnP-GF-oQu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-xE-z0E">
                                 <rect key="frame" x="179.5" y="483" width="55" height="30"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="mediumButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="f5I-0G-Xau"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJP-G1-ogC">
                                 <rect key="frame" x="190" y="533" width="34" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="hardButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="xEY-tj-7Ll"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-wP-SFG">
                                 <rect key="frame" x="161" y="380.5" width="92" height="35"/>
