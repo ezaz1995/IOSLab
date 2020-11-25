@@ -24,6 +24,8 @@ class GameViewController: UIViewController {
     var question: Question? 
     var numberOfQuestions = 0
     var rightAnswers = 0
+    var difficulty = ""
+    var amount = 0
     
     
     override func viewDidLoad() {

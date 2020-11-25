@@ -8,15 +8,18 @@
 import UIKit
 
 class StartViewController: UIViewController {
+   
+    var difficulty = ""
+    var amount = 0
 
     @IBOutlet weak var startButton: UIButton!
     var questions: [Question] = []
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         startButton.isEnabled = false
-        downloadQuestions(amount: 5, difficalty: "easy")
+        downloadQuestions(amount: amount, difficulty: difficulty)
 
     }
     
@@ -25,22 +28,25 @@ class StartViewController: UIViewController {
         navigationController?.pushViewController(highscoreTableViewController, animated: true)
     }
     
+
     @IBAction func easyButton(_ sender: Any) {
-        
+        difficulty = "easy"
+        downloadQuestions(amount: 5, difficulty: difficulty)
     }
     
     @IBAction func mediumButton(_ sender: Any) {
-        
+        difficulty = "medium"
+        downloadQuestions(amount: 5, difficulty: difficulty)
     }
     
     @IBAction func hardButton(_ sender: Any) {
-        
+        difficulty = "hard"
+        downloadQuestions(amount: 5, difficulty: difficulty)
     }
     
     
-    
-    private func downloadQuestions(amount: Int, difficalty: String){
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&difficulty=\(difficalty)&type=multiple") else {
+    func downloadQuestions(amount: Int, difficulty: String){
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=\(amount)&difficulty=\(difficulty)&type=multiple") else {
             return
         }
         let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, error) in
@@ -74,7 +80,7 @@ class StartViewController: UIViewController {
 //            let questions = [question1, question2, question1]
             questionViewController.numberOfQuestions = questions.count
             questionViewController.questions = questions
-            
+    
         }
     }
 
