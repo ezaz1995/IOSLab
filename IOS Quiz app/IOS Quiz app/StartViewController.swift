@@ -9,18 +9,18 @@ import UIKit
 
 class StartViewController: UIViewController {
    
+    
+
+    @IBOutlet weak var enterRoundsTextField: UITextField!
+    @IBOutlet weak var startButton: UIButton!
     var difficulty = ""
     var amount = 0
-
-    @IBOutlet weak var startButton: UIButton!
     var questions: [Question] = []
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         startButton.isEnabled = false
-        downloadQuestions(amount: amount, difficulty: difficulty)
-
+       
     }
     
     @IBAction func highscoreButtonHandler(_ sender: Any) {
@@ -30,19 +30,35 @@ class StartViewController: UIViewController {
     
 
     @IBAction func easyButton(_ sender: Any) {
-        difficulty = "easy"
-        downloadQuestions(amount: 5, difficulty: difficulty)
+        if(amount != Int(enterRoundsTextField.text!)){
+            difficulty = "easy"
+            amount = Int(enterRoundsTextField.text!)!
+            downloadQuestions(amount: amount, difficulty: difficulty)
+        }else{
+            checksValidationForRounds()
+        }
     }
     
     @IBAction func mediumButton(_ sender: Any) {
-        difficulty = "medium"
-        downloadQuestions(amount: 5, difficulty: difficulty)
+        if(amount != Int(enterRoundsTextField.text!)){
+            difficulty = "medium"
+            amount = Int(enterRoundsTextField.text!)!
+            downloadQuestions(amount: amount, difficulty: difficulty)
+        }else{
+            checksValidationForRounds()
+        }
     }
     
     @IBAction func hardButton(_ sender: Any) {
-        difficulty = "hard"
-        downloadQuestions(amount: 5, difficulty: difficulty)
+        if(amount != Int(enterRoundsTextField.text!)){
+            difficulty = "hard"
+            amount = Int(enterRoundsTextField.text!)!
+            downloadQuestions(amount: amount, difficulty: difficulty)
+        }else{
+            checksValidationForRounds()
+        }
     }
+    
     
     
     func downloadQuestions(amount: Int, difficulty: String){
@@ -69,15 +85,17 @@ class StartViewController: UIViewController {
         task.resume()
     }
     
+    
+    func checksValidationForRounds(){
+        let alertController = UIAlertController(title: "Invalid input", message: "You have to enter how many rounds", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Okey", style: UIAlertAction.Style.default, handler: {(_) in alertController.dismiss(animated: true, completion: nil)}))
+        present(alertController, animated: true, completion: nil)
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let questionViewController = segue.destination as? GameViewController {
-//            let question1 = Question(category: "Character", type: .multiple, difficulty: .easy, question: "What is Harrys last name?", correctAnswer: "Potter", incorrectAnswer: ["Malfoy", "Riddle" ,"Granger"])
-//            let question2 = Question(category: "Spells", type: .multiple, difficulty: .easy, question: "Which spell did Harrys learn during his third year?", correctAnswer: "Expecto Patronum", incorrectAnswer: ["Flippendo", "Wingardium Leviosa", "Incendium"])
-            
-//            let questions = [question1, question2, question1]
             questionViewController.numberOfQuestions = questions.count
             questionViewController.questions = questions
     

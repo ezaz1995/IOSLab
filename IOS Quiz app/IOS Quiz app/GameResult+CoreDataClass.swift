@@ -2,7 +2,7 @@
 //  GameResult+CoreDataClass.swift
 //  IOS Quiz app
 //
-//  Created by Sha Nawaz Hathalia on 2020-11-21.
+//  Created by Sha Nawaz Hathalia on 2020-11-26.
 //
 //
 

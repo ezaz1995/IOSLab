@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-562" y="24"/>
         </scene>
-        <!--Start Manu-->
+        <!--Start Menu-->
         <scene sceneID="l1i-of-dCr">
             <objects>
                 <viewController id="UOF-6M-5Qf" customClass="StartViewController" customModule="IOS_Quiz_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +35,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky-way-2695569_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="jA1-cq-cfM">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXH-1a-tYY">
                                 <rect key="frame" x="147" y="258" width="120" height="80"/>
@@ -50,24 +51,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnN-oi-cxK">
-                                <rect key="frame" x="190.5" y="433" width="33" height="30"/>
+                                <rect key="frame" x="161" y="430.5" width="92" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="DkK-cp-Jfx"/>
+                                    <constraint firstAttribute="width" constant="92" id="bBe-LP-2Yp"/>
+                                </constraints>
                                 <state key="normal" title="Easy"/>
                                 <connections>
                                     <action selector="easyButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="tnP-GF-oQu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-xE-z0E">
-                                <rect key="frame" x="179.5" y="483" width="55" height="30"/>
+                                <rect key="frame" x="161" y="480.5" width="92" height="35"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="P8Y-Dh-rep"/>
+                                    <constraint firstAttribute="width" constant="92" id="qCk-a2-TTg"/>
+                                </constraints>
                                 <state key="normal" title="Medium"/>
                                 <connections>
                                     <action selector="mediumButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="f5I-0G-Xau"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJP-G1-ogC">
-                                <rect key="frame" x="190" y="533" width="34" height="30"/>
+                                <rect key="frame" x="161" y="530.5" width="92" height="35"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="HP9-Dh-ien"/>
+                                    <constraint firstAttribute="height" constant="35" id="Z3J-CE-lTJ"/>
+                                </constraints>
                                 <state key="normal" title="Hard"/>
                                 <connections>
                                     <action selector="hardButton:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="xEY-tj-7Ll"/>
@@ -84,6 +97,14 @@
                                     <action selector="highscoreButtonHandler:" destination="UOF-6M-5Qf" eventType="touchUpInside" id="IF4-PP-EB6"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter how many rounds" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vE4-8F-DjJ">
+                                <rect key="frame" x="112.5" y="581" width="189" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hmy-9I-GGe"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +112,7 @@
                         <constraints>
                             <constraint firstItem="vnN-oi-cxK" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="6OC-2x-6Fc"/>
                             <constraint firstItem="jA1-cq-cfM" firstAttribute="bottom" secondItem="hmy-9I-GGe" secondAttribute="bottom" id="6oN-FV-Kk1"/>
+                            <constraint firstItem="vE4-8F-DjJ" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="AhL-7j-kTX"/>
                             <constraint firstItem="HdK-xE-z0E" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" constant="50" id="DJf-9i-gyP"/>
                             <constraint firstItem="iJP-G1-ogC" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" constant="100" id="E44-Jg-TWK"/>
                             <constraint firstItem="vnN-oi-cxK" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" id="LDl-Ug-b3j"/>
@@ -99,6 +121,7 @@
                             <constraint firstItem="hcS-wP-SFG" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="XbO-Io-rWq"/>
                             <constraint firstItem="hcS-wP-SFG" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" constant="-50" id="YNQ-zb-qnr"/>
                             <constraint firstItem="jA1-cq-cfM" firstAttribute="top" secondItem="hmy-9I-GGe" secondAttribute="top" id="ZUM-hD-nvI"/>
+                            <constraint firstItem="vE4-8F-DjJ" firstAttribute="centerY" secondItem="Qmz-Xc-y2c" secondAttribute="centerY" constant="150" id="aXE-R4-fu5"/>
                             <constraint firstItem="HdK-xE-z0E" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="fHl-Gg-MQm"/>
                             <constraint firstItem="VXH-1a-tYY" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="gzA-9u-aZ5"/>
                             <constraint firstItem="jA1-cq-cfM" firstAttribute="trailing" secondItem="hmy-9I-GGe" secondAttribute="trailing" id="puG-zs-csT"/>
@@ -106,8 +129,9 @@
                             <constraint firstItem="iJP-G1-ogC" firstAttribute="centerX" secondItem="Qmz-Xc-y2c" secondAttribute="centerX" id="xK0-QA-jwf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Start Manu" id="krQ-Lf-Fwc"/>
+                    <navigationItem key="navigationItem" title="Start Menu" id="krQ-Lf-Fwc"/>
                     <connections>
+                        <outlet property="enterRoundsTextField" destination="vE4-8F-DjJ" id="Vsh-wI-vMD"/>
                         <outlet property="startButton" destination="VXH-1a-tYY" id="bDL-XD-qz6"/>
                     </connections>
                 </viewController>
@@ -251,6 +275,9 @@
         <image name="milky-way-2695569_960_720" width="500" height="750"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

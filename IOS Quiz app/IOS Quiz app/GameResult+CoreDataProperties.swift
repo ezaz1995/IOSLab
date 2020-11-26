@@ -2,7 +2,7 @@
 //  GameResult+CoreDataProperties.swift
 //  IOS Quiz app
 //
-//  Created by Sha Nawaz Hathalia on 2020-11-21.
+//  Created by Sha Nawaz Hathalia on 2020-11-26.
 //
 //
 
@@ -16,9 +16,11 @@ extension GameResult {
         return NSFetchRequest<GameResult>(entityName: "GameResult")
     }
 
+    @NSManaged public var date: Date?
     @NSManaged public var numberOfQuestions: Int32
     @NSManaged public var rightAnswers: Int32
-    @NSManaged public var date: Date?
+    @NSManaged public var difficulty: String?
+    @NSManaged public var amount: Int32
 
 }
 

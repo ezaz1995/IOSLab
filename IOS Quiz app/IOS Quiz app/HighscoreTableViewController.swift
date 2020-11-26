@@ -54,8 +54,6 @@ class HighscoreTableViewController: UITableViewController {
 
         let gameResult = fetchedResultsController.object(at: indexPath)
         cell.textLabel?.text = "Out of \(gameResult.numberOfQuestions) you answered \(gameResult.rightAnswers) right"
-        
-        
         return cell
     }
     
